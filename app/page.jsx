@@ -29,7 +29,7 @@ export default function LoginPage() {
           const userData = await login('owner@workshop.com', 'password123');
           setUser(userData);
           router.push('/dashboard');
-          toast.success('Auto-logged in as Worker for demo!');
+          toast.success('Auto-logged in as Owner for demo!');
         } catch (error) {
           // If auto-login fails, just continue to show login form
           console.log('Auto-login failed, showing login form');
